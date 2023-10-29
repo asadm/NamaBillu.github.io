@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" style="width:100%; height:100%">
+    <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1920 height=1080></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Release.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Release.data.br",
-        frameworkUrl: buildUrl + "/Release.framework.js.br",
-        codeUrl: buildUrl + "/Release.wasm.br",
+        dataUrl: buildUrl + "/Release.data",
+        frameworkUrl: buildUrl + "/Release.framework.js",
+        codeUrl: buildUrl + "/Release.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "NamaBillu",
         productName: "Axie Bounce Battle Arena",
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1920";
-        canvas.style.height = "1080";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
